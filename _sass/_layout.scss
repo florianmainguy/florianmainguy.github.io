@@ -27,6 +27,7 @@
 	PADDING-LEFT: 0px}
 .menu UL A {
 	PADDING-BOTTOM: 5px 7px 7px 5px;
+    font-size: 20px;
     -webkit-transition: background-color 0.3s ease;
     -moz-transition: background-color 0.3s ease;
     -ms-transition: background-color 0.3s ease;
@@ -45,9 +46,16 @@
 	PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 5px
 }
 
+/* Content */
+.post {
+    margin-left: 10px;margin-right: 10px;
+}
+.post-title {
+    font-size: 1.5rem;
+}
 .post-date {
     FONT-FAMILY: "Avenir Next LT W01 Bold", "Avenir Next", sans-serif; FONT-WEIGHT: normal;
-	LINE-HEIGHT: 24px; TEXT-TRANSFORM: uppercase; FLOAT: right; FONT-SIZE: 12px; TEXT-ALIGN: right; MARGIN-TOP: 7px; MARGIN-LEFT: -190px;}
+	LINE-HEIGHT: 24px; TEXT-TRANSFORM: uppercase; FLOAT: right; FONT-SIZE: 13px; TEXT-ALIGN: right; MARGIN-TOP: 19px; MARGIN-LEFT: -190px;}
 
 .post-meta {
   font-size: 14px;
