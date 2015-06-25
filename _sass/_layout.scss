@@ -11,7 +11,7 @@
     MARGIN-TOP: 90px;
     DISPLAY: inline-block;
     FONT-SIZE: 46px;
-    margin-left: 25px;margin-right: 25px;
+    margin-left: 15px;margin-right: 15px;
 }
 .hero h1 a {
     color:#fff;
@@ -50,6 +50,7 @@
 .post {
     MARGIN: 0 auto;
     max-width: 50em;
+    padding-left: 30px;padding-right: 30px;
 }
 .post-list {
 	padding-left: 30px;padding-right: 30px;
@@ -72,11 +73,15 @@
     FLOAT: right;
     MARGIN-TOP: 15px; MARGIN-LEFT: -190px;
 }
+@media(max-width:600px){
+    .post-date {
+        display: none;
+    }
+}
 .post-meta {
     font-size: 14px;
     color: #828282;
 }
 .post-content {
     font-size: 20px;
-
 }
