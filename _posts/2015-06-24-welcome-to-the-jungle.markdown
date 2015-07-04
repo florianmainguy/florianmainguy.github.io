@@ -22,7 +22,7 @@ I have always been interested by the programming world, but never brave enough t
 The project that made me start this adventure is a story about an old valve radio and embedded systems, but let's stop here for now, I would like to keep some content for this blog later..
 
 So here I am, in front of a new world, and it's quiet exciting.
-I have just started <a href="http://theodinproject.com">The Odin Project</a>, which goal is to teach me all the basics needed to be a junior web developer, and it's been really nice so far. So if you enjoyed this introduction, please feel free to come back sometimes, have a look at my projects, send me an email about anything or buy me a boat.
+I have just started <a href="http://theodinproject.com">The Odin Project</a>, which goal is to teach all the basics needed to be a junior web developer, and it's been really nice so far. So if you enjoyed this introduction, please feel free to come back sometimes, have a look at my projects, send me an email about anything or buy me a boat.
 
 Enjoy
 
