@@ -49,7 +49,7 @@
 /* Content */
 .post {
     MARGIN: 0 auto;
-    max-width: 50em;
+    max-width: 40em;
     padding-left: 30px;padding-right: 30px;
 }
 .post-list {
@@ -84,4 +84,25 @@
 }
 .post-content {
     font-size: 20px;
+}
+
+/** Footer **/
+.site-footer {
+    height: 100px;
+}
+
+.wrapper {
+    margin: 60px auto;
+    height: 50px; width: 50px;
+    border-radius: 50%;
+    background-color: #6DA39F;
+}
+
+.footer-heading {
+    text-align: center;
+    padding-top: 7px;
+}
+
+.footer-heading a{
+    color: white;
 }
