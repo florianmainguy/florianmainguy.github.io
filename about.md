@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-I'm Florian Mainguy, a french living in England who despite his affection for food doesn't eat frog legs. 
+I'm Florian Mainguy, a french expat living in England who despite his affection for food doesn't eat frog legs. 
 
 Through this blog I would like to share things I like, my thoughts and my projects. It could be about Physics, Electronics, Programming or even Art, Music and History.
 
