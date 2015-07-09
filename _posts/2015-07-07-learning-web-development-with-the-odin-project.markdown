@@ -10,14 +10,14 @@ Do you want to kiss the seven seas along on your drakkar ?
 
 If so, join me on The Odin Project.
 
-<img src="2015-07-07-learning-web-development-with-the-odin-project/logo.jpg" width=32 height=32/>
+<!---<img src="2015-07-07-learning-web-development-with-the-odin-project/logo.jpg" width=32 height=32/>-->
 
 A few months ago, I decided to learn programming. I was fixing an old valve radio, and I thought I could add an embedded system in it to catch internet stations. I did some reasearch, and I believed I could write the program myself instead of copying an existing one on internet. This was certainly a big step. 
 
 This project made me enter the programming world. Ans as I like traveling, I wanted to see other areas.
 Interested by web development, I had a look a some websites that teach web languages. My choice was for The Odin Project.
 
-<img src>
+
 
 The Odin Project is an open source website dedicated to providing free online training, to anyone interesting by web development. 
 
