@@ -24,12 +24,7 @@
 	MARGIN: 0 auto;
     max-width: 42em;
 }
-.container HR {
-	BORDER: 0;
-    BACKGROUND-COLOR: #6DA39F;
-    WIDTH: 90px;
-    HEIGHT: 2px;
-}
+
 
 /* Menu */
 .menu {
@@ -87,6 +82,12 @@
 }
 .post-content {
     font-size: 20px;
+}
+.post-content img {
+    margin: 40px auto;
+}
+.post-content hr {
+    margin: 40px auto;
 }
 
 /** Footer **/
