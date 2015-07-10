@@ -22,12 +22,12 @@
 /* Container (Menu + Content) */
 .container {
 	MARGIN: 0 auto;
-    max-width: 32em;
+    max-width: 42em;
 }
 .container HR {
 	BORDER: 0;
     BACKGROUND-COLOR: #6DA39F;
-    WIDTH: 25%;
+    WIDTH: 90px;
     HEIGHT: 2px;
 }
 
@@ -76,6 +76,9 @@
 @media(max-width:600px){
     .post-date {
         display: none;
+    }
+    .hero h1 {
+        size: 30px;
     }
 }
 .post-meta {
