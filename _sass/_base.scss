@@ -8,15 +8,14 @@ body {
   -webkit-text-size-adjust: 100%; }
 
 img {
+    text-align: center;
     max-width: 130%;
     height:auto;
     margin-top: 40px;
-    margin-left: -20%;
-    border: 0.5px solid #E2E2E2;
+    border: 0.5px solid #CCCCCC;
 }
 @media(max-width: 600px) {
     max-width: 100%;
-    margin-left: auto;
 }
 /**
  * Links
