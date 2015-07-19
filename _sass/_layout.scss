@@ -73,8 +73,8 @@
         display: none;
     }
     .hero h1 {
-        font-size: 30px;
-    }
+        font-size: 35px;
+    } 
 }
 .post-meta {
     font-size: 14px;
@@ -82,13 +82,14 @@
 }
 .post-content {
     font-size: 20px;
-}
-.post-content img {
-    margin: 40px auto;
+    color: darkgrey;
 }
 .post-content hr {
     margin: 40px auto;
 }
+
+
+
 
 /** Footer **/
 .site-footer {
