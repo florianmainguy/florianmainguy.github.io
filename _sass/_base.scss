@@ -8,9 +8,12 @@ body {
   -webkit-text-size-adjust: 100%; }
 
 img {
-    max-width: 100%;
+    max-width: 120%;
     height:auto;
     margin: 40px auto;
+}
+@media(max-width: 600px) {
+    max-width: 100%;
 }
 /**
  * Links
