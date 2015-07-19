@@ -9,11 +9,11 @@ body {
 
 img {
     display: block;
-    max-width: 130%;
+    max-width: 100%;
     height:auto;
     margin: 40px auto;
     border: 2px solid #DDDDDD;
-    border-radius: 5%;
+    border-radius: 1%;
 }
 @media(max-width: 600px) {
     max-width: 100%;
