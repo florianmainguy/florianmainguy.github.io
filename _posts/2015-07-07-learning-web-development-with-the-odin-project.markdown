@@ -10,7 +10,7 @@ Do you want to kiss the seven seas along on your drakkar ?
 
 If so, join me on The Odin Project.
 
-[![The Odin Project Website]({{site.baseurl}}/assets/logo_odin_project.png)](http://www.theodinproject.com)
+[![The Odin Project Website]({{site.baseurl}}/assets/logo_odin_project.png)](http://www.theodinproject.com){.img_size}
 
 A few months ago, I decided to learn programming. I was fixing an old valve radio, and I thought I could add an embedded system in it to catch internet stations. I did some reasearch, and I believed I should write the program myself instead of copying an existing one on internet. This was certainly a big step. 
 
