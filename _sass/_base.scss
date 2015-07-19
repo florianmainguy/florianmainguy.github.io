@@ -8,11 +8,13 @@ body {
   -webkit-text-size-adjust: 100%; }
 
 img {
-    display: block;
-    max-width: 100%;
+    max-width: 110%;
+    min-width: 110%;
     height:auto;
-    margin: 40px auto;
+    margin-top: 40px;
+    margin-left:-5%;
     border: 2px solid #DDDDDD;
+    border-radius: 5px;
 }
 @media(max-width: 600px) {
     max-width: 100%;
