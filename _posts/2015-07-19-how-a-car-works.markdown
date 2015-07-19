@@ -9,4 +9,3 @@ Great website if you want to get some fundamentals even if you are not a car per
 Check it out and stop driving a mysterious machine.
 
 [![How A Car Works]({{site.baseurl}}/assets/how_a_car_works.png)](http://www.howacarworks.com)
-{:target="_blank"}
