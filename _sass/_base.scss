@@ -11,10 +11,12 @@ img {
     max-width: 130%;
     height:auto;
     margin-top: 40px;
-    margin-left: -10%;
+    margin-left: -20%;
+    border: 0.5px solid #E2E2E2;
 }
 @media(max-width: 600px) {
     max-width: 100%;
+    margin-left: auto;
 }
 /**
  * Links
