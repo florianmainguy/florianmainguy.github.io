@@ -31,7 +31,7 @@ Blücher never retreated to the East. After the defeat at Ligny, he withdrew to 
 
 By the end of 17 June, Grouchy realized and headed towards Wavre. But his detachment was now behind the Prussians, on the far side of the Dyle. This meant that they were incapable of preventing the Prussians moving from Wavre towards Waterloo and too far away themselves to go directly to the aid of Napoleon.
 
-<hr />
+<img src="{{site.baseurl}}/assets/grouchy_portrait.jpg" style="min-width:0;max-width:100%;margin-left:35%">
  
 June 18th 1815. Belgium. Sart-Lez-Walhain. 11:30.
  
@@ -41,6 +41,6 @@ In a nearby inn, Grouchy is eating some lovely strawberries. One of his officers
 
 Gérard, one of the generals, advices to march to the sound of the guns to aid the emperor. But Grouchy prefers to stick to the orders and to pursue the Prussians towards Wavre.
 
-<hr />
+![Strawberries]({{site.baseurl}}/assets/grouchy_fraises.jpg)
 
 Chill out Gérard, these belgium strawberries are really good.
