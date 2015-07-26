@@ -23,7 +23,7 @@ In just eight weeks, Napoleon assembled 128,000 soldiers in the French Army of t
 Two days before the Battle of Waterloo, on 16 June, Napoleon defeated Blücher at the Battle of Ligny. Convinced that the Prussians were retreating to the East, at the opposite of Wellington's forces, he sent Marshal Grouchy to pursue them wherever they were going and harry them so that they had no time to reorganise.
 In the same time, Napoleon marched northwards in pursuit of the Duke of Wellington's army, who took a defensive position in Waterloo.
 
-And these was the mistake that doomed Napoleon.
+And this was the mistake that doomed Napoleon.
 
 <hr />
 
