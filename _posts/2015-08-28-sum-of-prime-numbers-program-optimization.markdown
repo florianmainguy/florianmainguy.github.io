@@ -21,6 +21,7 @@ As I am currently learning ruby and I enjoy it, I choose this language.
 
 ##First Solution - Brut Force
 
+<div class="highlight">
 {% highlight ruby linenos%}
 # SOLUTION 1. Executed Time: 18m31.577s
 
@@ -43,6 +44,7 @@ end
 sum_primes += arr_nb.inject { |sum, n| sum + n }
 puts "The sum of the primes below two million: #{sum_primes}"
 {% endhighlight %}
+</div>
 
 In this first solution, I use the brut force method. I check all numbers from 2 to 2million by dividing them by all numbers less than themselves. When I get a prime number,  I add it to <code>sum_primes</code>. The execution time is 18min 30sec. Not very efficient !
 
