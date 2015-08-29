@@ -38,7 +38,7 @@ Time execution: 5.380sec. Not too bad ! At that point, I'm quite happy with that
 
 *** pb10-3 ***
 
-There is a ***Prime*** class in ruby ! What a surprise. And the execution time: 0.383sec. Oh god, this is quick !
+There is a <cod>Prime</cod>Prime*** class in ruby ! What a surprise. And the execution time: 0.383sec. Oh god, this is quick !
 
 I need to know what's behind this magical class. I need to beat this time !
 
