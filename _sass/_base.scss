@@ -14,6 +14,9 @@ img {
     margin-left:-5%;
     /*border: 2px solid #DDDDDD;*/
     border-radius: 5px;
+    -moz-box-shadow: 0 5px 5px rgba(34,25,25,0.4);
+    -webkit-box-shadow: 0 5px 5px rgba(34,25,25,0.4);
+    box-shadow: 0 5px 5px rgba(34,25,25,0.4);
 }
 
 a {
