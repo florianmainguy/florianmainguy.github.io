@@ -21,7 +21,7 @@ As I am currently learning ruby and I enjoy it, I choose this language.
 
 ##First Solution - Brut Force
 
-{% highlight ruby %}
+{% highlight ruby linenos%}
 # SOLUTION 1. Executed Time: 18m31.577s
 
 # Brut force method. 
