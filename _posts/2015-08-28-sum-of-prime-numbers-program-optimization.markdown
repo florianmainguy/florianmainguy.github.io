@@ -8,7 +8,7 @@ When solving a problem on <a href="https://projecteuler.net/">Project Euler</a>,
 
 The problem n°10 is the first one I encountered where my solution exceeded this time. So I decided to do some algorithm optimizations. This process was really interesting and I feel so much more knowledgeable now that I want to share how I did it.
 
-##Problem statement:
+<h2>Problem statement:</h2>
 
 *** énoncé pb ***
 
@@ -16,7 +16,7 @@ A number is a prime number if and only if it is divisible by 1 and itself.
 
 As I am currently learning ruby and I enjoy it, I choose this language.
 
-##First solution, brut force
+<h2>First solution, brut force</h2>
 
 *** pb10-1 ***
 
