@@ -6,19 +6,19 @@ categories: jekyll update
 ---
 When solving a problem on <a href="https://projecteuler.net/">Project Euler</a>, you can use whatever language you fancy. The only suggestion is to keep an execution time of less than a minute.
 
-The problem n°10 is the first one I encountered where my solution exceeded this time. So I decided to do some algorithm optimizations. This process was really interesting and I feel so much more knowledgeable now that I want to share how I did it.
+The problem n°10 is the first one I encountered where my solution exceeded this time. So I decided to do some algorithm optimizations. This process was really interesting and I feel so much more knowledgeable now that I want to share what I did.
 
 
 ##Problem statement
 
 <div class="blockquote">
-<p>The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+<p>The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.<br>
 Find the sum of all the primes below two million.</p>
 </div>
 
 A number is a prime number if and only if it is divisible by 1 and itself.
 
-As I am currently learning ruby and I enjoy it, I choose this language.
+As I am currently learning ruby and I enjoy it, I choose this programming language to solve the problem.
 
 
 ##First Solution - Brut Force
@@ -69,7 +69,7 @@ arr_nb.each do |number|
   primes.each do |prime|
   	break if number % prime == 0
   	if (prime == primes.last) || (number < prime**2)  # The smallest prime p multiple
-  	  primes << number                      # of a number N: p**2 < N
+  	  primes << number                                # of a number N: p**2 < N
   	  break
   	end
   end
@@ -83,7 +83,7 @@ I first create a prime array including only <code class="highlight">2</code>, an
 
 An optimization I found is that any non prime numbers can be expressed by a product a primes, with the smallest prime being less than the square root of this number.
 
-Time execution: 5.380sec. Not too bad ! At that point, I'm quite happy with that, and I go on the Project Euler forum to see other user solutions. And I found something unexpected..
+Time execution: 5.380sec. Not too bad ! At that point, I'm quite happy with that, and I go on the Project Euler forum to see other user solutions. And I find something unexpected..
 
 
 ##Third Solution - Cheat !
@@ -194,9 +194,9 @@ Oh I see, so actually I was wrong, instead of taking a number and checking its d
 # all the primes of the number N.
 #
 # Optimization 1: stop eliminating multiples when we arrive at a prime p where
-#    			  p**2 > N because following non primes have already been eliminated.
+#                 p**2 > N because following non primes have already been eliminated.
 # Optimization 2: eliminate multiples of a prime p beginning at p**2 because 
-# 			      previous non primes have already been eliminated.
+#                 previous non primes have already been eliminated.
 
 nb_max = 2_000_000
 
@@ -219,7 +219,7 @@ sum_primes = arr_nb.compact.inject {|sum, n| sum + n}
 puts "The sum of the primes below nb_max: #{sum_primes}"
 {% endhighlight %}
 
-There is two optimizations in this algorithm. The first one is to look for multiples of a prime p beginning at p<sup>2</sup>, and the second is to stop the process when we arrive at a prime p where p<sup>2</sup> > N, where N is the limit. But is it enough ?
+There are two improvements here compared to the eratosthenes' sieve. The first one is to look for multiples of a prime p beginning at p<sup>2</sup>, and the second is to stop the process when we arrive at a prime p where p<sup>2</sup> > N, with N the limit. But is it enough ?
 
 Time executed: 0.443sec. Ahhhhh I'm so close !
 
@@ -241,7 +241,7 @@ Multiples of any primes are half even, half odd. That means that half of the tim
 # all the primes of the number N.
 #
 # Optimization 3: eliminate first all even numbers (except 2).
-# 				  Then eliminate only multiples of primes that are odd.
+#                 Then eliminate only multiples of primes that are odd.
 
 nb_max = 2_000_000
 
@@ -267,7 +267,7 @@ sum_primes = arr_nb.compact.inject {|sum, n| sum + n}
 puts "The sum of the primes below nb_max: #{sum_primes}"
 {% endhighlight %}
 
-This new optimization allows to eliminate first all even numbers, then to eliminate odd multiples of primes. And the execution time.. 0.348sec.
+This new optimization eliminates first all even numbers, then odd multiples of primes. And the execution time.. **0.348sec**.
 
 Yesss ! I did it !
 
