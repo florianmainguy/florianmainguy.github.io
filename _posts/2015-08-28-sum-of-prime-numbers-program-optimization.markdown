@@ -12,8 +12,8 @@ The problem n°10 is the first one I encountered where my solution exceeded this
 ##Problem statement
 
 <div class="blockquote">
-The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
-Find the sum of all the primes below two million.
+<p>The>The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.</p>
+<p>Find>Find the sum of all the primes below two million.</p>
 </div>
 
 A number is a prime number if and only if it is divisible by 1 and itself.
