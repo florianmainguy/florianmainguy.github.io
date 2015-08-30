@@ -53,7 +53,31 @@ In this first solution, I use the brut force method. I check all numbers from 2 
 
 We know that any number that is not a prime can be expressed by a product of primes. So instead of checking if a number is divisible by all numbers less than itself, we check if it is divisible by the primes less than itself. If not, it's a prime.
 
-*** pb10-2 ***
+{% highlight ruby linenos%}
+# SOLUTION 2. Executed Time: 5.380s
+
+# For each number n from 0 to 2million, check if it is divisible by 
+# the known prime numbers. If not, it is a prime, add it to "primes"
+
+nb_max = 2_000_000
+arr_nb = (2..nb_max).to_a
+primes = [2]
+sum_primes = 0
+i=0
+
+arr_nb.each do |number|
+  primes.each do |prime|
+  	break if number % prime == 0
+  	if (prime == primes.last) || (number < prime**2)  # The smallest prime p multiple
+  	  primes << number 								  # of a number N: p**2 < N
+  	  break
+  	end
+  end
+end
+
+sum_primes = primes.inject { |sum, n| sum + n }
+puts "The sum of the primes below two million: #{sum_primes}"
+{% endhighlight %}
 
 I first create a prime array including only ***2***, and I push into it all the found primes.
 
@@ -64,7 +88,17 @@ Time execution: 5.380sec. Not too bad ! At that point, I'm quite happy with that
 
 ##Third Solution - Cheat !
 
-*** pb10-3 ***
+{% highlight ruby linenos%}
+# SOLUTION 3. Executed Time: 0.383s
+
+# Too easy..
+
+require 'prime'
+
+sum_primes = Prime.each(2_000_000).inject(:+)
+
+puts "The sum of the primes below nb_max: #{sum_primes}"
+{% endhighlight %}
 
 There is a <cod>Prime</cod>Prime*** class in ruby ! What a surprise. And the execution time: 0.383sec. Oh god, this is quick !
 
@@ -75,17 +109,68 @@ I need to know what's behind this magical class. I need to beat this time !
 
 The ***Prime*** class is really big, so we will focus only on the internal subclass ***EratosthenesSieve*** that generates the prime numbers.
 
-*** pb10-4 ***
+{% highlight ruby linenos%}
+# Internal use. An implementation of eratosthenes' sieve
+  class EratosthenesSieve
+    include Singleton
+
+    def initialize
+      @primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59,
+ 61, 67, 71, 73, 79, 83, 89, 97, 101]
+      # @max_checked must be an even number
+      @max_checked = @primes.last + 1
+    end
+
+    def get_nth_prime(n)
+      compute_primes while @primes.size <= n
+      @primes[n]
+    end
+
+    private
+    def compute_primes
+      # max_segment_size must be an even number
+      max_segment_size = 1e6.to_i
+      max_cached_prime = @primes.last
+      # do not double count primes if #compute_primes is interrupted
+      # by Timeout.timeout
+      @max_checked = max_cached_prime + 1 if max_cached_prime > @max_checked
+
+      segment_min = @max_checked
+      segment_max = [segment_min + max_segment_size, max_cached_prime * 2].min
+      root = Integer(Math.sqrt(segment_max).floor)
+
+      sieving_primes = @primes[1 .. -1].take_while { |prime| prime <= root }
+      offsets = Array.new(sieving_primes.size) do |i|
+        (-(segment_min + 1 + sieving_primes[i]) / 2) % sieving_primes[i]
+      end
+
+      segment = ((segment_min + 1) .. segment_max).step(2).to_a
+      sieving_primes.each_with_index do |prime, index|
+        composite_index = offsets[index]
+        while composite_index < segment.size do
+          segment[composite_index] = nil
+          composite_index += prime
+        end
+      end
+
+      segment.each do |prime|
+        @primes.push prime unless prime.nil?
+      end
+      @max_checked = segment_max
+    end
+  end
+
+{% endhighlight %}
 
 What I learn first with this code, is that there is something called the Sieve of Eratosthenes and it is apparently important in this algorithm. 
 A quick look on <a href="https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes">wikipedia</a> and I discover that Eratosthenes is a Greek mathematician, and that he created a simple algorithm to find all prime numbers to any given limit.
 
 So, how does it work ?
 
-***cit***
-To find all the prime numbers less than or equal to a given integer n by Eratosthenes' method:
-Create a list of consecutive integers from 2 through n: (2, 3, 4, ..., n).
-Initially, let p equal 2, the first prime number.
+
+<To find all the prime numbers less than or equal to a given integer n by Eratosthenes' method:
+<Create a list of consecutive integers from 2 through n: (2, 3, 4, ..., n).
+<Initially, let p equal 2, the first prime number.
 Starting from p, enumerate its multiples by counting to n in increments of p, and mark them in the list (these will be 2p, 3p, 4p, ... ; the p itself should not be marked).
 Find the first number greater than p in the list that is not marked. If there was no such number, stop. Otherwise, let p now equal this new number (which is the next prime), and repeat from step 3.
 When the algorithm terminates, the numbers remaining not marked in the list are all the primes below n.
@@ -96,7 +181,41 @@ Oh I see, so actually I was wrong, instead of taking a number and checking its d
 
 ##Fourth Solution - Greek Tribute
 
-*** pb 10-5 ***
+{% highlight ruby linenos%}
+# SOLUTION 4. Executed Time: 0.443s
+
+# Implementation of eratosthenes' sieve
+#
+# Instead of taking a number and checking if it's a prime, we take a prime and 
+# eliminate all his multiples. The next number following the prime that has not been
+# eliminating is the next prime. We can then loop this two operations till we get
+# all the primes of the number N.
+#
+# Optimization 1: stop eliminating multiples when we arrive at a prime p where
+#    			  p**2 > N because following non primes have already been eliminated.
+# Optimization 2: eliminate multiples of a prime p beginning at p**2 because 
+# 			      previous non primes have already been eliminated.
+
+nb_max = 2_000_000
+
+# create array of numbers
+arr_nb = [*0..nb_max]
+arr_nb[0] = nil
+arr_nb[1] = nil  
+
+# if number is not a prime, replace value by "nil"
+(2..Math.sqrt(nb_max)).each do |nb|            # optimization 1
+  if arr_nb[nb] 								   
+    (nb**2..nb_max).step(2*nb) do |not_prime|  # optimization 2
+      arr_nb[not_prime]=nil
+    end
+  end
+end
+
+# sum the primes
+sum_primes = arr_nb.compact.inject {|sum, n| sum + n}
+puts "The sum of the primes below nb_max: #{sum_primes}"
+{% endhighlight %}
 
 There is two optimizations in this algorithm. The first one is to look for multiples of a prime p beginning at ***p square***, and the second is to stop the process when we arrive at a prime p where ***p>square root number***, where N is the limit. But is it enough ?
 
@@ -109,7 +228,42 @@ Wait, I got an idea..
 
 Multiples of any primes are half even, half odd. That means that half of the time, we eliminate even multiples, that have already been eliminated with the prime ***2***. Can we avoid doing that ?
 
-*** pb 10-6 ***
+{% highlight ruby linenos%}
+# SOLUTION 5 Executed Time: 0.348s
+
+# Implementation of eratosthenes' sieve
+#
+# Instead of taking a number and checking if it's a prime, we take a prime and 
+# eliminate all his multiples. The next number following the prime that has not been
+# eliminating is the next prime. We can then loop this two operations till we get
+# all the primes of the number N.
+#
+# Optimization 3: eliminate first all even numbers (except 2).
+# 				  Then eliminate only multiples of primes that are odd.
+
+nb_max = 2_000_000
+
+# create array of numbers
+arr_nb = [*0..nb_max]
+arr_nb[0] = nil
+arr_nb[1] = nil  
+
+# even numbers
+(2**2..nb_max).step(2) {|even_nb| arr_nb[even_nb] = nil}
+
+# odd numbers
+(3..Math.sqrt(nb_max)).each do |number|   
+  if arr_nb[number]
+    (number**2..nb_max).step(2 *number) do |not_prime|   # optimization 3
+      arr_nb[not_prime]=nil
+    end
+  end
+end
+
+# sum the primes
+sum_primes = arr_nb.compact.inject {|sum, n| sum + n}
+puts "The sum of the primes below nb_max: #{sum_primes}"
+{% endhighlight %}
 
 This new optimization allows to eliminate first all even numbers, then to eliminate odd multiples of primes. And the execution time.. 0.348sec.
 
