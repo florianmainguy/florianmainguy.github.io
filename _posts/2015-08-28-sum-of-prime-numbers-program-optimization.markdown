@@ -46,7 +46,7 @@ sum_primes += arr_nb.inject { |sum, n| sum + n }
 puts "The sum of the primes below two million: #{sum_primes}"
 {% endhighlight %}
 
-In this first solution, I use the brut force method. I check all numbers from 2 to 2million by dividing them by all numbers less than themselves. When I get a prime number,  I add it to <code>sum_primes</code>. The execution time is 18min 30sec. Not very efficient !
+In this first solution, I use the brut force method. I check all numbers from 2 to 2million by dividing them by all numbers less than themselves. When I get a prime number,  I add it to <code class="highlight">sum_primes</code>. The execution time is 18min 30sec. Not very efficient !
 
 
 ##Second Solution - First Optimization
@@ -100,14 +100,14 @@ sum_primes = Prime.each(2_000_000).inject(:+)
 puts "The sum of the primes below nb_max: #{sum_primes}"
 {% endhighlight %}
 
-There is a <cod>Prime</cod>Prime*** class in ruby ! What a surprise. And the execution time: 0.383sec. Oh god, this is quick !
+There is a <code class=highlight>Prime</code> class in ruby ! What a surprise. And the execution time: 0.383sec. Oh god, this is quick !
 
 I need to know what's behind this magical class. I need to beat this time !
 
 
 ##Eratosthenes Sieve
 
-The ***Prime*** class is really big, so we will focus only on the internal subclass ***EratosthenesSieve*** that generates the prime numbers.
+The <code class=highlight>Prime</code> class is really big, so we will focus only on the internal subclass <code class=highlight>EratosthenesSieve</code> that generates the prime numbers.
 
 {% highlight ruby linenos%}
 # Internal use. An implementation of eratosthenes' sieve
@@ -167,16 +167,16 @@ A quick look on <a href="https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes">wi
 
 So, how does it work ?
 
-
-<To find all the prime numbers less than or equal to a given integer n by Eratosthenes' method:
-<Create a list of consecutive integers from 2 through n: (2, 3, 4, ..., n).
-<Initially, let p equal 2, the first prime number.
+<div class="blockquote">
+<p>To find all the prime numbers less than or equal to a given integer n by Eratosthenes' method:
+Create a list of consecutive integers from 2 through n: (2, 3, 4, ..., n).
+Initially, let p equal 2, the first prime number.
 Starting from p, enumerate its multiples by counting to n in increments of p, and mark them in the list (these will be 2p, 3p, 4p, ... ; the p itself should not be marked).
 Find the first number greater than p in the list that is not marked. If there was no such number, stop. Otherwise, let p now equal this new number (which is the next prime), and repeat from step 3.
-When the algorithm terminates, the numbers remaining not marked in the list are all the primes below n.
-***cit***
+When the algorithm terminates, the numbers remaining not marked in the list are all the primes below n.</p>
+</div>
 
-Oh I see, so actually I was wrong, instead of taking a number and checking its divisors, I should take a prime and mark all his multiples. Great idea ! As there are much less primes than numbers, there will be much less instructions. Let's try to do it myself, by helping me with the ***EratosthenesSieve*** subclass.
+Oh I see, so actually I was wrong, instead of taking a number and checking its divisors, I should take a prime and mark all his multiples. Great idea ! As there are much less primes than numbers, there will be much less instructions. Let's try to do it myself, by helping me with the <code class=highlight>EratosthenesSieve</code> subclass.
 
 
 ##Fourth Solution - Greek Tribute
@@ -217,7 +217,7 @@ sum_primes = arr_nb.compact.inject {|sum, n| sum + n}
 puts "The sum of the primes below nb_max: #{sum_primes}"
 {% endhighlight %}
 
-There is two optimizations in this algorithm. The first one is to look for multiples of a prime p beginning at ***p square***, and the second is to stop the process when we arrive at a prime p where ***p>square root number***, where N is the limit. But is it enough ?
+There is two optimizations in this algorithm. The first one is to look for multiples of a prime p beginning at p squate, and the second is to stop the process when we arrive at a prime p where ***p>square root number***, where N is the limit. But is it enough ?
 
 Time executed: 0.443sec. Ahhhhh I'm so close !
 
