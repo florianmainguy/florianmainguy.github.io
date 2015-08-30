@@ -58,8 +58,12 @@
 .post-list LI DIV {
 	PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 5px
 }
-.post-title {
+.index-title {
     font-size: 24px;
+    color:#6DA39F;
+}
+.post-title {
+    font-size: 32px;
     color:#6DA39F;
 }
 h2 {
@@ -94,15 +98,18 @@ h2 {
 }
 .blockquote {
     margin:1em 20px; 
-    background: #dfdfdf;
+    background: #A6CCB4;
     padding: 8px 8px 8px 8px;
     font-style: italic;
 }
-.highlight {
+/*.highlight {
    margin: 10px;
    padding: 10px;
    border: 1px solid #ccc;
    border-radius: 3px;       
+}*/
+code {
+  color: #4C7572; /* dark grey */
 }
 
 

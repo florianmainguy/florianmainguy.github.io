@@ -4,9 +4,8 @@ title:  "And Grouchy was eating strawberries"
 date:   2015-07-26 20:30:00
 categories: jekyll update
 ---
-June 18th 1815. Belgium. Waterloo. 
-
-Napoleon vs Wellington.
+*June 18th 1815. Belgium. Waterloo.*
+*Napoleon vs Wellington.*
 
 Roughly 70,000 men each. After a few hours, the advantage is slightly for the french Emperor. But Blücher arrives on the battlefield.
 
@@ -32,12 +31,11 @@ Blücher never retreated to the East. After the defeat at Ligny, he withdrew to 
 By the end of 17 June, Grouchy realized and headed towards Wavre. But his detachment was now behind the Prussians, on the far side of the Dyle. This meant that they were incapable of preventing the Prussians moving from Wavre towards Waterloo and too far away themselves to go directly to the aid of Napoleon.
 
 <div class="wraptocenter">
-<img src="{{site.baseurl}}/assets/grouchy_portrait.jpg" style="min-width:0;max-width:100%">
+<img src="{{site.baseurl}}/assets/grouchy_portrait.jpg" style="min-width:0;max-width:100%;box-shadow:0">
 </div>
  
-June 18th 1815. Belgium. Sart-Lez-Walhain. 11:30.
- 
-Grouchy vs strawberries. 
+*June 18th 1815. Belgium. Sart-Lez-Walhain. 11:30.*
+*Grouchy vs strawberries. *
 
 In a nearby inn, Grouchy is eating some lovely strawberries. One of his officers suddenly hears some gun battle sounds. It is coming from Waterloo.
 
