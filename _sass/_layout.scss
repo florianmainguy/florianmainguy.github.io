@@ -103,7 +103,14 @@ h2 {
     padding: 8px 8px 8px 8px;
     font-style: italic;
 }
-code { 
+.highlight {
+    padding: 3px 3px 3px 3px;
+}
+.highlight pre {
+    font-family: Menlo, Regular;
+    font-size: 12px;
+}
+.highlight pre code { 
     display: block; 
     white-space: pre; 
     overflow-x: auto; 
