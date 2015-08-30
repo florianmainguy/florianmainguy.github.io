@@ -8,6 +8,7 @@ When solving a problem on <a href="https://projecteuler.net/">Project Euler</a>,
 
 The problem n°10 is the first one I encountered where my solution exceeded this time. So I decided to do some algorithm optimizations. This process was really interesting and I feel so much more knowledgeable now that I want to share how I did it.
 
+
 ##Problem statement
 
 <div class="blockquote">
@@ -18,6 +19,7 @@ Find the sum of all the primes below two million.
 A number is a prime number if and only if it is divisible by 1 and itself.
 
 As I am currently learning ruby and I enjoy it, I choose this language.
+
 
 ##First Solution - Brut Force
 
@@ -46,6 +48,7 @@ puts "The sum of the primes below two million: #{sum_primes}"
 
 In this first solution, I use the brut force method. I check all numbers from 2 to 2million by dividing them by all numbers less than themselves. When I get a prime number,  I add it to <code>sum_primes</code>. The execution time is 18min 30sec. Not very efficient !
 
+
 ##Second Solution - First Optimization
 
 We know that any number that is not a prime can be expressed by a product of primes. So instead of checking if a number is divisible by all numbers less than itself, we check if it is divisible by the primes less than itself. If not, it's a prime.
@@ -58,6 +61,7 @@ An optimization I found is that any non prime numbers can be expressed by a prod
 
 Time execution: 5.380sec. Not too bad ! At that point, I'm quite happy with that, and I go on the Project Euler forum to see other user solutions. And I found something unexpected..
 
+
 ##Third Solution - Cheat !
 
 *** pb10-3 ***
@@ -65,6 +69,7 @@ Time execution: 5.380sec. Not too bad ! At that point, I'm quite happy with that
 There is a <cod>Prime</cod>Prime*** class in ruby ! What a surprise. And the execution time: 0.383sec. Oh god, this is quick !
 
 I need to know what's behind this magical class. I need to beat this time !
+
 
 ##Eratosthenes Sieve
 
@@ -88,6 +93,7 @@ When the algorithm terminates, the numbers remaining not marked in the list are 
 
 Oh I see, so actually I was wrong, instead of taking a number and checking its divisors, I should take a prime and mark all his multiples. Great idea ! As there are much less primes than numbers, there will be much less instructions. Let's try to do it myself, by helping me with the ***EratosthenesSieve*** subclass.
 
+
 ##Fourth Solution - Greek Tribute
 
 *** pb 10-5 ***
@@ -97,6 +103,7 @@ There is two optimizations in this algorithm. The first one is to look for multi
 Time executed: 0.443sec. Ahhhhh I'm so close !
 
 Wait, I got an idea..
+
 
 ##Fifth Solution - Revelation
 
