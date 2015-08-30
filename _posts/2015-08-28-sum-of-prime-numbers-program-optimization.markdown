@@ -269,6 +269,6 @@ puts "The sum of the primes below nb_max: #{sum_primes}"
 
 This new optimization allows to eliminate first all even numbers, then to eliminate odd multiples of primes. And the execution time.. 0.348sec.
 
-Yeah ! I did it !
+Yesss ! I did it !
 
 ![Usain Bolt]({{site.baseurl}}/assets/usain_bolt.jpg)
