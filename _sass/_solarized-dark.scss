@@ -17,7 +17,7 @@ code {
     font_family: "Menlo Regular";
 	font_size: 12px;
 }
-.highlight pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; }
+.highlight pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; font_family: "Menlo Regular";}
 
 .highlight { background-color: #002b36; color: #93a1a1 }
 .highlight .lineno { color: #586e75 } /* Line Numbers */
