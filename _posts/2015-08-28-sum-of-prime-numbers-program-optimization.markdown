@@ -169,11 +169,11 @@ So, how does it work ?
 
 <div class="blockquote">
 <p>To find all the prime numbers less than or equal to a given integer n by Eratosthenes' method:
-Create a list of consecutive integers from 2 through n: (2, 3, 4, ..., n).
-Initially, let p equal 2, the first prime number.
-Starting from p, enumerate its multiples by counting to n in increments of p, and mark them in the list (these will be 2p, 3p, 4p, ... ; the p itself should not be marked).
-Find the first number greater than p in the list that is not marked. If there was no such number, stop. Otherwise, let p now equal this new number (which is the next prime), and repeat from step 3.
-When the algorithm terminates, the numbers remaining not marked in the list are all the primes below n.</p>
+<ul>Create a list of consecutive integers from 2 through n: (2, 3, 4, ..., n).
+Initially, let p equal 2, the first prime number.</ul>
+<ul>Starting from p, enumerate its multiples by counting to n in increments of p, and mark them in the list (these will be 2p, 3p, 4p, ... ; the p itself should not be marked).</ul>
+<ul>Find the first number greater than p in the list that is not marked. If there was no such number, stop. Otherwise, let p now equal this new number (which is the next prime), and repeat from step 3.</ul>
+<ul>When the algorithm terminates, the numbers remaining not marked in the list are all the primes below n.</ul></p>
 </div>
 
 Oh I see, so actually I was wrong, instead of taking a number and checking its divisors, I should take a prime and mark all his multiples. Great idea ! As there are much less primes than numbers, there will be much less instructions. Let's try to do it myself, by helping me with the <code class="highlight">EratosthenesSieve</code> subclass.
@@ -217,7 +217,7 @@ sum_primes = arr_nb.compact.inject {|sum, n| sum + n}
 puts "The sum of the primes below nb_max: #{sum_primes}"
 {% endhighlight %}
 
-There is two optimizations in this algorithm. The first one is to look for multiples of a prime p beginning at p<sup>2</sup,>, and the second is to stop the process when we arrive at a prime p where p<sup>2</sup> > N, where N is the limit. But is it enough ?
+There is two optimizations in this algorithm. The first one is to look for multiples of a prime p beginning at p<sup>2</sup>, and the second is to stop the process when we arrive at a prime p where p<sup>2</sup> > N, where N is the limit. But is it enough ?
 
 Time executed: 0.443sec. Ahhhhh I'm so close !
 
