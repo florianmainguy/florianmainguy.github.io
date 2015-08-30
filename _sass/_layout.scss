@@ -102,15 +102,16 @@ h2 {
     padding: 8px 8px 8px 8px;
     font-style: italic;
 }
-/*.highlight {
-   margin: 10px;
-   padding: 10px;
-   border: 1px solid #ccc;
-   border-radius: 3px;       
+.highlight pre, pre, .highlight .hll {
+    background-color: #49483E;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 3px;
+    color: #FFFFFF;
 }
 code {
   color: #4C7572; /* dark grey */
-}*/
+}
 
 
 /** Footer **/
