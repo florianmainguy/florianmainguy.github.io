@@ -79,7 +79,7 @@ sum_primes = primes.inject { |sum, n| sum + n }
 puts "The sum of the primes below two million: #{sum_primes}"
 {% endhighlight %}
 
-I first create a prime array including only ***2***, and I push into it all the found primes.
+I first create a prime array including only <code class="highlight">2</code>, and I push into it all the found primes.
 
 An optimization I found is that any non prime numbers can be expressed by a product a primes, with the smallest prime being less than the square root of this number.
 
@@ -100,14 +100,14 @@ sum_primes = Prime.each(2_000_000).inject(:+)
 puts "The sum of the primes below nb_max: #{sum_primes}"
 {% endhighlight %}
 
-There is a <code class=highlight>Prime</code> class in ruby ! What a surprise. And the execution time: 0.383sec. Oh god, this is quick !
+There is a <code class="highlight">Prime</code> class in ruby ! What a surprise. And the execution time: 0.383sec. Oh god, this is quick !
 
 I need to know what's behind this magical class. I need to beat this time !
 
 
 ##Eratosthenes Sieve
 
-The <code class=highlight>Prime</code> class is really big, so we will focus only on the internal subclass <code class=highlight>EratosthenesSieve</code> that generates the prime numbers.
+The <code class="highlight">Prime</code> class is really big, so we will focus only on the internal subclass <code class="highlight">EratosthenesSieve</code> that generates the prime numbers.
 
 {% highlight ruby linenos%}
 # Internal use. An implementation of eratosthenes' sieve
@@ -176,7 +176,7 @@ Find the first number greater than p in the list that is not marked. If there wa
 When the algorithm terminates, the numbers remaining not marked in the list are all the primes below n.</p>
 </div>
 
-Oh I see, so actually I was wrong, instead of taking a number and checking its divisors, I should take a prime and mark all his multiples. Great idea ! As there are much less primes than numbers, there will be much less instructions. Let's try to do it myself, by helping me with the <code class=highlight>EratosthenesSieve</code> subclass.
+Oh I see, so actually I was wrong, instead of taking a number and checking its divisors, I should take a prime and mark all his multiples. Great idea ! As there are much less primes than numbers, there will be much less instructions. Let's try to do it myself, by helping me with the <code class="highlight">EratosthenesSieve</code> subclass.
 
 
 ##Fourth Solution - Greek Tribute
@@ -217,7 +217,7 @@ sum_primes = arr_nb.compact.inject {|sum, n| sum + n}
 puts "The sum of the primes below nb_max: #{sum_primes}"
 {% endhighlight %}
 
-There is two optimizations in this algorithm. The first one is to look for multiples of a prime p beginning at p squate, and the second is to stop the process when we arrive at a prime p where ***p>square root number***, where N is the limit. But is it enough ?
+There is two optimizations in this algorithm. The first one is to look for multiples of a prime p beginning at p<sup>2</sup,>, and the second is to stop the process when we arrive at a prime p where p<sup>2</sup> > N, where N is the limit. But is it enough ?
 
 Time executed: 0.443sec. Ahhhhh I'm so close !
 
@@ -226,7 +226,7 @@ Wait, I got an idea..
 
 ##Fifth Solution - Revelation
 
-Multiples of any primes are half even, half odd. That means that half of the time, we eliminate even multiples, that have already been eliminated with the prime ***2***. Can we avoid doing that ?
+Multiples of any primes are half even, half odd. That means that half of the time, we eliminate even multiples, that have already been eliminated with the prime <code class="highlight">2</code>. Can we avoid doing that ?
 
 {% highlight ruby linenos%}
 # SOLUTION 5 Executed Time: 0.348s
