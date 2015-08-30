@@ -104,20 +104,17 @@ h2 {
     font-style: italic;
 }
 .highlight {
-    padding: 3px 3px 3px 3px;
+    padding: 3px 2px 3px 2px;
 }
-.highlight pre {
-    font-family: Menlo, Regular;
-    font-size: 12px;
-}
+
 .highlight pre code { 
     display: block; 
     white-space: pre; 
     overflow-x: auto; 
     word-wrap: normal;
     font-family: Menlo;
-    line-height: 90%;
-    letter-spacing: -0.5;
+    line-height: 95%;
+    letter-spacing: -0.5px;
 }
 code {
     font-size: 13px;
