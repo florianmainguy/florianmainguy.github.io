@@ -13,16 +13,11 @@ cyan      #2aa198  strings, numbers
 green     #859900  operators, other keywords
 */
 
-code {
-    font_family: "Menlo Regular";
-	font_size: 12px;
-}
-
 .highlight pre {
     font-family: "Menlo Regular";
-    font-size: 12px;
+    font-size: 14px;
 }
-.highlight pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; font_family: "Menlo Regular";}
+.highlight pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal;}
 
 .highlight { background-color: #002b36; color: #93a1a1 }
 .highlight .lineno { color: #586e75 } /* Line Numbers */
