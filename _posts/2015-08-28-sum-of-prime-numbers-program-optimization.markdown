@@ -18,7 +18,7 @@ Find the sum of all the primes below two million.
 
 A number is a prime number if and only if it is divisible by 1 and itself.
 
-As I am currently learning ruby and I enjoy it, I choose this language.
+As I am currently learning ruby and I enjoy it, I choose this language.\n
 
 
 ##First Solution - Brut Force
