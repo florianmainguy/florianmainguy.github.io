@@ -69,7 +69,7 @@
 h2 {
     font-size: 26px;
     color:#6DA39F;
-    margin-top: 5px;
+    padding-top: 5px;
 }
 .post-date {
     FONT-FAMILY: "Avenir Next LT W01 Bold", "Avenir Next", sans-serif; FONT-WEIGHT: normal;FONT-SIZE: 13px;
@@ -114,12 +114,10 @@ h2 {
     overflow-x: auto; 
     word-wrap: normal;
     font-family: Menlo;
-    
+    font-size: 12px;
     letter-spacing: -1px;
 }
-p code {
-    font-size: 16px;
-}
+
 
 /** Footer **/
 .site-footer {
