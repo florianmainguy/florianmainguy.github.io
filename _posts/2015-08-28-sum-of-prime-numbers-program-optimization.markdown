@@ -12,8 +12,8 @@ The problem n°10 is the first one I encountered where my solution exceeded this
 ##Problem statement
 
 <div class="blockquote">
-<p>The>The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.</p>
-<p>Find>Find the sum of all the primes below two million.</p>
+<p>The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+Find the sum of all the primes below two million.</p>
 </div>
 
 A number is a prime number if and only if it is divisible by 1 and itself.
@@ -69,7 +69,7 @@ arr_nb.each do |number|
   primes.each do |prime|
   	break if number % prime == 0
   	if (prime == primes.last) || (number < prime**2)  # The smallest prime p multiple
-  	  primes << number 								  # of a number N: p**2 < N
+  	  primes << number                      # of a number N: p**2 < N
   	  break
   	end
   end
