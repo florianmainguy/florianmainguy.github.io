@@ -169,11 +169,13 @@ So, how does it work ?
 
 <div class="blockquote">
 <p>To find all the prime numbers less than or equal to a given integer n by Eratosthenes' method:
-<ol>Create a list of consecutive integers from 2 through n: (2, 3, 4, ..., n).
-Initially, let p equal 2, the first prime number.</ol>
-<ul>Starting from p, enumerate its multiples by counting to n in increments of p, and mark them in the list (these will be 2p, 3p, 4p, ... ; the p itself should not be marked).</ul>
-<ul>Find the first number greater than p in the list that is not marked. If there was no such number, stop. Otherwise, let p now equal this new number (which is the next prime), and repeat from step 3.</ul>
-<ul>When the algorithm terminates, the numbers remaining not marked in the list are all the primes below n.</ul></p>
+<ol>
+<li>Create a list of consecutive integers from 2 through n: (2, 3, 4, ..., n).
+Initially, let p equal 2, the first prime number.</li>
+<li>Starting from p, enumerate its multiples by counting to n in increments of p, and mark them in the list (these will be 2p, 3p, 4p, ... ; the p itself should not be marked).</li>
+<li>Find the first number greater than p in the list that is not marked. If there was no such number, stop. Otherwise, let p now equal this new number (which is the next prime), and repeat from step 3.</li>
+<li>When the algorithm terminates, the numbers remaining not marked in the list are all the primes below n.</li>
+</ol></p>
 </div>
 
 Oh I see, so actually I was wrong, instead of taking a number and checking its divisors, I should take a prime and mark all his multiples. Great idea ! As there are much less primes than numbers, there will be much less instructions. Let's try to do it myself, by helping me with the <code class="highlight">EratosthenesSieve</code> subclass.
