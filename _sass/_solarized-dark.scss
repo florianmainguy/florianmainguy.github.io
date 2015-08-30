@@ -14,10 +14,10 @@ green     #859900  operators, other keywords
 */
 
 .highlight pre {
-    font-family: Menlo Regular;
+    font-family: Menlo, Regular;
     font-size: 12px;
 }
-.highlight pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal;font-family: Menlo Regular;}
+.highlight pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal;font-family: Menlo;font-weight: Regular;}
 
 .highlight { background-color: #002b36; color: #93a1a1 }
 .highlight .lineno { color: #586e75 } /* Line Numbers */
