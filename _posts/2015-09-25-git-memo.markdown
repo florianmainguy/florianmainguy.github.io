@@ -4,10 +4,6 @@ title:  "Git memo"
 date:   2015-09-25 20:30:00
 categories: jekyll update
 ---
-*Last update: 25 Sep 2015*
-<br>
-<br>
-
 Here is a simple memo to remind me some basic commands. I will update this list from time to time.
 
 {% highlight ruby %}
@@ -32,3 +28,5 @@ git remote set-url origin https://github.com/someone/repo.git
 # Pull changes from remote repository
 git pull origin master
 {% endhighlight %}
+
+Last update: 25 Sep 2015
