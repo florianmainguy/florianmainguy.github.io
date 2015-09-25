@@ -6,28 +6,27 @@ categories: jekyll update
 ---
 Last update: 25 Sep 2015
 <br>
+<br>
 
 Here is a simple memo to remind me some basic commands. I will update this list from time to time.
 
-**Clone**<br>
+Clone<br>
 <code class="highlight">git clone https://github.com/someone/repo.git</code>
 
-**Init**<br>
+Init<br>
 <code class="highlight">git init</code>
 
-<hr>
-
-**Add all files changed**<br>
+Add all files changed<br>
 <code class="highlight">git add .</code>
 
-**Commit**<br>
+Commit<br>
 <code class="highlight">git commit -m "Comment"</code>
 
-**Pushes commits from local branch(master) to remote(origin)**<br>
+Pushes commits from local branch(master) to remote(origin)<br>
 <code class="highlight">git push origin master</code>
 
-**Change remote's URL**<br>
+Change remote's URL<br>
 <code class="highlight">git remote set-url origin https://github.com/someone/repo.git</code>
 
-**Pull changes from remote repository**<br>
+Pull changes from remote repository<br>
 <code class="highlight">git pull origin master</code>
