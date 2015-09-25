@@ -10,23 +10,25 @@ Last update: 25 Sep 2015
 
 Here is a simple memo to remind me some basic commands. I will update this list from time to time.
 
-Clone<br>
-<code class="highlight">git clone https://github.com/someone/repo.git</code>
+{% highlight ruby %}
+# Clone
+git clone https://github.com/someone/repo.git
 
-Init<br>
-<code class="highlight">git init</code>
+# Init
+git init
 
-Add all files changed<br>
-<code class="highlight">git add .</code>
+# Add all files changed
+git add .
 
-Commit<br>
-<code class="highlight">git commit -m "Comment"</code>
+# Commit
+git commit -m "Comment"
 
-Pushes commits from local branch(master) to remote(origin)<br>
-<code class="highlight">git push origin master</code>
+# Pushes commits from local branch(master) to remote(origin)
+git push origin master
 
-Change remote's URL<br>
-<code class="highlight">git remote set-url origin https://github.com/someone/repo.git</code>
+# Change remote's URL
+git remote set-url origin https://github.com/someone/repo.git
 
-Pull changes from remote repository<br>
-<code class="highlight">git pull origin master</code>
+# Pull changes from remote repository
+git pull origin master
+{% endhighlight %}
