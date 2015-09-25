@@ -4,7 +4,7 @@ title:  "Git memo"
 date:   2015-09-25 20:30:00
 categories: jekyll update
 ---
-Last update: 25 Sep 2015
+*Last update: 25 Sep 2015*
 <br>
 <br>
 
