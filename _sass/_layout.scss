@@ -110,8 +110,6 @@ h2 {
 }
 .highlight {
     padding: 5px 5px 5px 5px;
-    height: 200px;
-    overflow-y: scroll;
 }
 .highlight pre {
     margin-top: 0;
@@ -121,6 +119,7 @@ h2 {
     display: block; 
     white-space: pre; 
     overflow-x: auto; 
+    overflow-y: auto;
     word-wrap: normal;
     font-family: Menlo;
     font-size: 12px;
