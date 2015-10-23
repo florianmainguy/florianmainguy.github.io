@@ -13,8 +13,6 @@ This part has been a great challenge. I struggled many times, but at the end I l
 It begins with some simple programs to write, as a way to familiarize yourself with Ruby. You even have to rewrite some existing methods from the Enumerable class. And it's a great way to learn how Ruby works in the inside.
 Then serious stuff begin. OOP, serialization, API interaction, recursion, data structures and TDD. But you never feel lost. The curriculum is really well made, you tackle all these subjects one at a time and going through each problem is an incredible source of motivation for braving the next one!
 
-[picture with sword]
-
 It took me 2 months to achieve this part, and it wasn't wasting time.
 
 Let's talk about the final ruby project I realized, a command line chess game.
@@ -1329,8 +1327,6 @@ And regards to design, it pushes you to keep a sort of independance between meth
 This feeling when after looping throught debugging and implementing new functionalities, you start a new game and everything works fine.. First it's surprise! I didn't really believed that my game was actually working fine. I have never done a program that long before.
 
 Then it's joy. You've done it! 
-
-[picture joy]
 
 This second part of The Odin Project wasn't a waste of time. I learned how to use Ruby, but more than that I learned how I should design my code. I learned how to use data structures and algorithms to make it more efficient. I learned how to test my code and the beauty of debugging. And I learned how important it is to keep a core clean, tidy and commented.
 
