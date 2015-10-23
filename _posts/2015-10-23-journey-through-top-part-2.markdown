@@ -75,7 +75,7 @@ Before doing this chess game, I already had to create some command line games, l
 
 This one would be divided in four classes:
 
-* Player class
+**Player class**
 
 {% highlight ruby linenos%}
 # Class for the players. Their name and which color they play.
@@ -92,7 +92,7 @@ end
 The Player class is really basic. Its purpose is to store the player's name and the color he plays, white or black.
 
 <br>
-* Board class
+**Board class**
 
 {% highlight ruby linenos%}
 # Class for the board. Allows to display the chess board and to get and set squares.
@@ -167,7 +167,7 @@ end
 The Board class aim is to create a chess board and be able to display it. the <code class="highlight">get_case</code> and <code class="highlight">set_case</code> methods allow to read and update a case from a Board object.
 
 <br>
-* Pieces class
+**Pieces class**
 
 {% highlight ruby linenos%}
 # Parent class of all pieces.
@@ -270,7 +270,7 @@ end
 The Pieces class is a parent class for all the chess pieces. I initialized the attributes and some instances in it, avoiding repeatition in the following nested classes (DRY, very important!).
 In the pieces classes are stored the unicodes, and a method that returns the way the pieces move on a board.
 <br>
-* Game class
+**Game class**
 
 The heart of the game. Let's see it in more details.
 
