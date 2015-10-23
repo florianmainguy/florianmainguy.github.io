@@ -8,7 +8,9 @@ My journey through The Odin Project goes on, and I have just finished the second
 
 This part has been a great challenge. I struggled many times, but at the end I learned a lot and I feel much more confident.
 
-It begins with some simple programs to write, as a way to familiarize with Ruby. You even have to rewrite some existing Ruby methods from the Enumerable class. And it's a great way to learn how Ruby works in the inside.
+## Ruby Ruby Ruby Rubyyy
+
+It begins with some simple programs to write, as a way to familiarize yourself with Ruby. You even have to rewrite some existing methods from the Enumerable class. And it's a great way to learn how Ruby works in the inside.
 Then serious stuff begin. OOP, serialization, API interaction, recursion, data structures and TDD. But you never feel lost. The curriculum is really well made, you tackle all these subjects one at a time and going through each problem is an incredible source of motivation for braving the next one!
 
 [picture with sword]
