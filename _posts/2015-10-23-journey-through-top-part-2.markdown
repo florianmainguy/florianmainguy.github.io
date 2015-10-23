@@ -66,7 +66,7 @@ game.start
 
 Basically, all the usual functionalities of a chess game have been implemented!
 
-I'm a chess player, so I wanted to be able to play chess with the true rules. I would have found really annoying if I couldn't castle because it's part of the strategy of the game.
+I'm a chess player, so I wanted to be able to play chess with the true rules. I would have found it really annoying if I couldn't castle because it's part of the strategy of the game.
 Now, let's have a look at the design.
 
 ## OOP, check!
@@ -75,7 +75,7 @@ Before doing this chess game, I already had to create some command line games, l
 
 This one would be divided in four classes:
 
-* **Player class**
+* Player class
 
 {% highlight ruby linenos%}
 # Class for the players. Their name and which color they play.
@@ -89,9 +89,10 @@ class Player
 end
 {% endhighlight %}
 
-The Player class is really basics. Its purpose is to store the player's name and the color he plays, white or black.
+The Player class is really basic. Its purpose is to store the player's name and the color he plays, white or black.
 
-* **Board class**
+<br>
+* Board class
 
 {% highlight ruby linenos%}
 # Class for the board. Allows to display the chess board and to get and set squares.
@@ -165,7 +166,8 @@ end
 
 The Board class aim is to create a chess board and be able to display it. the <code class="highlight">get_case</code> and <code class="highlight">set_case</code> methods allow to read and update a case from a Board object.
 
-* **Pieces class**
+<br>
+* Pieces class
 
 {% highlight ruby linenos%}
 # Parent class of all pieces.
@@ -265,10 +267,10 @@ class Pawn < Pieces
 end
 {% endhighlight %}
 
-The Pieces class is a parent class for all the chess pieces. I initialized the attributes and some instances in it, it allows to not repeat (DRY, very important!).
+The Pieces class is a parent class for all the chess pieces. I initialized the attributes and some instances in it, avoiding repeatition in the following nested classes (DRY, very important!).
 In the pieces classes are stored the unicodes, and a method that returns the way the pieces move on a board.
-
-* **Game class**
+<br>
+* Game class
 
 The heart of the game. Let's see it in more details.
 
@@ -863,13 +865,13 @@ class Game
 end
 {% endhighlight %}
 
-The method #start is the one used to launch a new game. From there, the player can choose to load a game or start a new one. If he starts a new one, he will be asked his name and which color he wants to play. Same for other player. Then we have a loop that allows the program to play the same instructions till we've got a winner, a draw or a slatemate (equals a draw).
+The method <code class="highlight">#start</code> is the one used to launch a new game. From there, the player can choose to load a game or start a new one. If he starts a new one, he will be asked his name and which color he wants to play. Same for other player. Then we have a loop that allows the program to play the same instructions till we've got a winner, a draw or a slatemate (equals a draw).
 
-This class is really long so I won't describe everything. Regards to the design, I tried to keep methods short and with one purpose. It's not always easy but I thing it really pays off. It makes the code clea and tidy, and much more easily to read. Furthermore I try to keep as much comments as possible, without disturbing the clearness of the code.
+This class is really long so I won't describe everything. Regards to the design, I tried to keep methods short and with one purpose. It's not always easy but I thing it really pays off. It makes the code cleaner, tidy, and much more easily to read. Furthermore I try to keep as much comments as possible, without disturbing the clearness of the code.
 
 ## Writing Specs, Check!
 
-Using RSpec, I wrote some tests for the main methods of my Game class. And I really have to confess: testing seemed first a waste of time. But you see quickly how efficient it can be. These tests allowed me to correct some glitches in my code I wouldn't have found without. Or maybe I would, but after 25 games maybe! So it's definitly not a waste of time.
+Using RSpec, I wrote some tests for the main methods of my Game class. And I really have to confess: testing seemed first a waste of time. But you see quickly how efficient it can be. These tests allowed me to correct some glitches in my code I wouldn't have found without. Or maybe I would, but 25 games later! So it's definitly not a waste of time.
 
 {% highlight ruby linenos%}
 require './lib/game.rb'
