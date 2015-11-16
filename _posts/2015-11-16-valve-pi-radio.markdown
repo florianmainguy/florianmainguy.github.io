@@ -61,7 +61,7 @@ Now I need to find where to plug this lead into the valve radio. Hopefully, I fo
 
 I didn't want to modify the radio case, so I attached the Raspberry PI inside the radio. Hopefully, there was still some room due to the fact I don't use any portable battery.
 
-![pi_radio_11]({{site.baseurl}}/assets/pi_radio/pi_radio_1.jpg)
+![pi_radio_11]({{site.baseurl}}/assets/pi_radio/pi_radio_11.jpg)
 
 After final tests, everything works as expected!
 And as a bonus, the LCD on the Raspberry PI gives a nice blue light inside the radio. Ahead of his time for a 60 years old radio, isn't it?
