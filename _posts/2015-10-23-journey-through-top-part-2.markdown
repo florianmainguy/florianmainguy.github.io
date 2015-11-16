@@ -1324,7 +1324,7 @@ And regards to design, it pushes you to keep a sort of independance between meth
 
 ## Level up, checkmate!
 
-This feeling when after looping throught debugging and implementing new functionalities, you start a new game and everything works fine.. First it's surprise! I didn't really believed that my game was actually working fine. I have never done a program that long before.
+This feeling when after looping throught debugging and implementing new functionalities, you start a new game and everything works fine.. First it's surprise! I didn't really believe that my game was actually working fine. I have never done a program that long before.
 
 Then it's joy. You've done it! 
 
