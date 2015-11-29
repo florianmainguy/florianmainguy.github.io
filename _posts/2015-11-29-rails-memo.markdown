@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Git memo"
+title:  "Rails memo"
 date:   2015-11-29 20:30:00
 categories: jekyll update
 ---
