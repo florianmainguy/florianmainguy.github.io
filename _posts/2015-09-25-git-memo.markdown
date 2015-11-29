@@ -13,20 +13,30 @@ git clone https://github.com/someone/repo.git
 # Init
 git init
 
-# Add all files changed
+# Stages all files
+git add -A
+# Stages new and modified files, without deleted ones
 git add .
+# Stages modifies and deleted files, without new ones
+git add -u
 
 # Commit
 git commit -m "Comment"
 
-# Pushes commits from local branch(master) to remote(origin)
+# Check status
+git status
+
+# Push commits from local branch 'master' to remote 'origin'
 git push origin master
 
 # Change remote's URL
 git remote set-url origin https://github.com/someone/repo.git
 
-# Pull changes from remote repository
+# Pull changes from remote 'origin' repository
 git pull origin master
+
+# Puch subtree to remote 'heroku'
+git subtree push --prefix path/to/subpath heroku master
 {% endhighlight %}
 
-Last update: 25 Sep 2015
+Last update: 29 Nov 2015
