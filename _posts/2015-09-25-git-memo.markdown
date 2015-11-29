@@ -29,6 +29,8 @@ git status
 # Push commits from local branch 'master' to remote 'origin'
 git push origin master
 
+# Check remote repositories
+git remote -v
 # Change remote's URL
 git remote set-url origin https://github.com/someone/repo.git
 
