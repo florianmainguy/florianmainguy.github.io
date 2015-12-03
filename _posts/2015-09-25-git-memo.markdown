@@ -25,6 +25,10 @@ git commit -m "Comment"
 
 # Check status
 git status
+# See last commit with changes made
+git show
+# See last commit without changes made
+git log -1
 
 # Push commits from local branch 'master' to remote 'origin'
 git push origin master
@@ -48,4 +52,4 @@ git pull origin master
 git subtree push --prefix path/to/subpath heroku master
 {% endhighlight %}
 
-Last update: 29 Nov 2015
+Last update: 03 Dec 2015
