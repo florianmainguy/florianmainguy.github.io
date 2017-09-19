@@ -9,8 +9,8 @@ Through this blog I would like to share things I like, my thoughts and my projec
 
 My passion is to learn, whatever the subject.
 
-To drop me an email: florian.mainguy@gmail.com
-
 Enjoy
 
 Florian
+
+EDIT: Following the birth of my son, I stopped updating this blog.

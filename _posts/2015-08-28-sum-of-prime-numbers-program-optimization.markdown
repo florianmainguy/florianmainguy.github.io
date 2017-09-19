@@ -9,7 +9,7 @@ When solving a problem on <a href="https://projecteuler.net/">Project Euler</a>,
 The problem n°10 is the first one I encountered where my solution exceeded this time. So I decided to do some algorithm optimizations. This process was really interesting and I feel so much more knowledgeable now that I want to share what I did.
 
 
-##Problem statement
+## Problem statement
 
 <div class="blockquote">
 <p>The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.<br>
@@ -21,7 +21,7 @@ A number is a prime number if and only if it is divisible by 1 and itself.
 As I am currently learning ruby and I enjoy it, I choose this programming language to solve the problem.
 
 
-##First Solution - Brut Force
+## First Solution - Brut Force
 
 {% highlight ruby linenos%}
 # SOLUTION 1. Executed Time: 18m31.577s
@@ -86,7 +86,7 @@ An optimization I found is that any non prime numbers can be expressed by a prod
 Time execution: 5.380sec. Not too bad ! At that point, I'm quite happy with that, and I go on the Project Euler forum to see other user solutions. And I find something unexpected..
 
 
-##Third Solution - Cheat !
+## Third Solution - Cheat !
 
 {% highlight ruby linenos%}
 # SOLUTION 3. Executed Time: 0.383s
@@ -105,7 +105,7 @@ There is a <code class="highlight">Prime</code> class in ruby ! What a surprise.
 I need to know what's behind this magical class. I need to beat this time !
 
 
-##Eratosthenes Sieve
+## Eratosthenes Sieve
 
 The <code class="highlight">Prime</code> class is really big, so we will focus only on the internal subclass <code class="highlight">EratosthenesSieve</code> that generates the prime numbers.
 
@@ -181,7 +181,7 @@ Initially, let p equal 2, the first prime number.</li>
 Oh I see, so actually I was wrong, instead of taking a number and checking its divisors, I should take a prime and mark all his multiples. Great idea ! As there are much less primes than numbers, there will be much less instructions. Let's try to do it myself, by helping me with the <code class="highlight">EratosthenesSieve</code> subclass.
 
 
-##Fourth Solution - Greek Tribute
+## Fourth Solution - Greek Tribute
 
 {% highlight ruby linenos%}
 # SOLUTION 4. Executed Time: 0.443s
@@ -226,7 +226,7 @@ Time executed: 0.443sec. Ahhhhh I'm so close !
 Wait, I got an idea..
 
 
-##Fifth Solution - Revelation
+## Fifth Solution - Revelation
 
 Multiples of any primes are half even, half odd. That means that half of the time, we eliminate even multiples, that have already been eliminated with the prime <code class="highlight">2</code>. Can we avoid doing that ?
 
