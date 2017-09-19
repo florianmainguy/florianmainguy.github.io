@@ -30,8 +30,18 @@ git show
 # See last commit without changes made
 git log -1
 
+# See differences between local 'master' and remote 'origin' depository
+git diff master origin/master
 # Push commits from local branch 'master' to remote 'origin'
 git push origin master
+# Pull changes from remote 'origin' repository
+# This is basically a 'git fetch' followed by a 'git merge'
+git pull origin master
+
+# When I`ve done some local changes but I need to pull
+git stash #save local changes away
+git pull
+git stash pop #merge local changes
 
 # Create and move to new branch
 git checkout -b branch-name
@@ -46,6 +56,7 @@ git remote -v
 git remote set-url origin https://github.com/someone/repo.git
 
 # Pull changes from remote 'origin' repository
+# This is basically a 'git fetch' followed by a 'git merge'
 git pull origin master
 
 # Puch subtree to remote 'heroku'
