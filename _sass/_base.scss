@@ -19,6 +19,18 @@ img {
     box-shadow: 0 5px 5px rgba(34,25,25,0.4);
 }
 
+#map {
+	max-width: 180%;
+    min-width: 180%;
+	height:600px;
+	margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left:-40%;
+	border-radius: 5px;
+    -moz-box-shadow: 0 5px 5px rgba(34,25,25,0.4);
+    -webkit-box-shadow: 0 5px 5px rgba(34,25,25,0.4);
+    box-shadow: 5px 5px 5px rgba(34,25,25,0.4);
+}
 a {
   color: #5B8B88;
   text-decoration: none; }
