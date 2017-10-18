@@ -60,5 +60,3 @@ git remote set-url origin https://github.com/someone/repo.git
 # Puch subtree to remote 'heroku'
 git subtree push --prefix path/to/subpath heroku master
 {% endhighlight %}
-
-Last update: 19 Sep 2017
