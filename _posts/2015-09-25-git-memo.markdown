@@ -22,6 +22,8 @@ git add -u
 
 # Commit
 git commit -m "Comment"
+# See staged changes
+git diff --cached
 
 # Check status
 git status
@@ -54,10 +56,6 @@ git merge branch-name
 git remote -v
 # Change remote's URL
 git remote set-url origin https://github.com/someone/repo.git
-
-# Pull changes from remote 'origin' repository
-# This is basically a 'git fetch' followed by a 'git merge'
-git pull origin master
 
 # Puch subtree to remote 'heroku'
 git subtree push --prefix path/to/subpath heroku master
