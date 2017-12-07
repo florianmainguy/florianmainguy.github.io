@@ -18,7 +18,7 @@ layout: default
     {% for memo in site.memos %}
       <li>
         <span class="post-meta"></span>
-          <a href="{{ post.url | prepend: site.baseurl }}">
+          <a href="{{ memo.url | prepend: site.baseurl }}">
               <div>
                   <span class="index-title">{{ memo.title }}</span>
                   <span class="post-date">{{ memo.date | date: "%b %-d, %Y" }}</span>
