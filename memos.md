@@ -15,13 +15,13 @@ layout: default
 <div class="container content">
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for memo in site.memoss %}
       <li>
         <span class="post-meta"></span>
           <a href="{{ post.url | prepend: site.baseurl }}">
               <div>
-                  <span class="index-title">{{ post.title }}</span>
-                  <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                  <span class="index-title">{{ memo.title }}</span>
+                  <span class="post-date">{{ memo.date | date: "%b %-d, %Y" }}</span>
               </div>
           </a>
       </li>
