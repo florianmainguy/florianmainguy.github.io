@@ -54,6 +54,8 @@ git merge branch-name
 
 # Check remote repositories
 git remote -v
+# Add remote repository
+git remote add origin https://github.com/someone/repo.git
 # Change remote's URL
 git remote set-url origin https://github.com/someone/repo.git
 
