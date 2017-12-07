@@ -5,5 +5,5 @@ permalink: /memos/
 ---
 
 
-[Vi Memo](vi-memo.md)<br>
+[Vi Memo](vi-memo.markdown)<br>
 [Rails Memo]({{site.baseurl}}/memos/rails-memo.markdown)
