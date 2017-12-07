@@ -1,8 +1,6 @@
 ---
 layout: post
 title:  "Git memo"
-date:   2015-09-25 20:30:00
-categories: jekyll update
 ---
 A simple memo to remind me some basic git commands. I will update this list from time to time.
 

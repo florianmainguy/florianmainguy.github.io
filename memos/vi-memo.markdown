@@ -1,8 +1,6 @@
 ---
 layout: post
 title:  "Vi memo"
-date:   2017-09-19 20:30:00
-categories: jekyll update
 ---
 Vi has two modes insertion mode and command mode. The editor begins in command mode, where the cursor movement and text deletion and pasting occur. Insertion mode begins upon entering an insertion or change command. [ESC] returns the editor to command mode (where you can quit, for example by typing :q!). Most commands execute as soon as you type them except for "colon" commands which execute when you press the return key.
 

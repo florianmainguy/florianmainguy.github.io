@@ -1,8 +1,6 @@
 ---
 layout: post
 title:  "Rails memo"
-date:   2015-11-29 20:30:00
-categories: jekyll update
 ---
 A simple memo to remind me some basic rails commands.
 
