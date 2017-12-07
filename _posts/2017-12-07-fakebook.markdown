@@ -10,22 +10,11 @@ Getting back into Rails, with a challenging project I finally completed. Basical
 This is also the final project of the Rails curriculum in The Odin Project. 
 
 My dreams to be friend with Chuck Norris and Jean-Claude Vandamne finally come true.
-
-Below is the github repo readme.
-
-
-
-
+<br>
 
 ## Fakebook
 
-A social network clone built with Ruby on Rails.
-
-From [The Odin Project](https://www.theodinproject.com/lessons/final-project)
-
 Main repo: [Github](https://github.com/florianmainguy/fakebook) - See it live: [Fakebook](https://fm-fakebook.herokuapp.com/)
-
-Mainly inspired by [Blackwright](https://github.com/blackwright/tracebook)
 
 Explore the app by logging in with one of the prepopulated accounts, or start from scratch with a blank guest account.
 
@@ -70,21 +59,24 @@ password: deltaforce
 
 ## Screenshots
 
-### Sign-in page
+**Sign-in page**
 ![register](https://github.com/florianmainguy/fakebook/blob/master/docs/register.png?raw=true)
 
-### Timeline
+
+**Timeline**
 ![timeline](https://github.com/florianmainguy/fakebook/blob/master/docs/timeline.png?raw=true)
 
-### Post
+
+**Post**
 ![post](https://github.com/florianmainguy/fakebook/blob/master/docs/post.png?raw=true)
 
-### About page on smartphone
-<p align="center">
-  <img width="300" src="https://github.com/florianmainguy/fakebook/blob/master/docs/about.png">
-</p>
 
-### Search page on smartphone
-<p align="center">
-  <img width="300" src="https://github.com/florianmainguy/fakebook/blob/master/docs/index.png">
-</p>
+**About page on smartphone**
+<div class="wraptocenter">
+<img src="https://github.com/florianmainguy/fakebook/blob/master/docs/about.png" style="min-width:0;max-width:100%;box-shadow:0">
+</div>
+
+**Search page on smartphone**
+<div class="wraptocenter">
+<img src="https://github.com/florianmainguy/fakebook/blob/master/docs/index.png" style="min-width:0;max-width:100%;box-shadow:0">
+</div>

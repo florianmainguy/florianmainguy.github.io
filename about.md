@@ -5,6 +5,8 @@ permalink: /about/
 ---
 My passion is to learn, whatever the subject.
 
-![Florian Mainguy]({{site.baseurl}}/assets/moi.jpg){:min-width=0}
+<div class="wraptocenter">
+<img src="{{site.baseurl}}/assets/moi.jpg" style="min-width:0;max-width:100%;box-shadow:0">
+</div>
 
 <a href="https://github.com/florianmainguy">Github</a>
