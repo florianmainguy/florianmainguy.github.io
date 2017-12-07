@@ -15,7 +15,7 @@ layout: default
 <div class="container content">
 
   <ul class="post-list">
-    {% for memo in site.memoss %}
+    {% for memo in site.memos %}
       <li>
         <span class="post-meta"></span>
           <a href="{{ post.url | prepend: site.baseurl }}">
