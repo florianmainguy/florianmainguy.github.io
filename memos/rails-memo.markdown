@@ -34,5 +34,3 @@ bundle exec rake test:integration
 # Models test
 bundle exec rake test:models
 {% endhighlight %}
-
-Last update: 29 Nov 2015 
