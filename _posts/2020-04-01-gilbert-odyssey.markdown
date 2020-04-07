@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "Gilbert Odyssey - The 5 Monuments of Cycling"
+title:  "Gilbert Odyssey or The 5 Monuments of Cycling - React/Node.js"
 date:   2020-04-07 20:30:00
 categories: jekyll update
 ---
 
 Gilbert Odyssey is an interactive visualisation of the 5 Monuments of cycling<br/>
 
-Named after Philippe Gilbert, whose dedication for winning all Monuments is outstanding.<br/>
+Named after **Philippe Gilbert**, whose dedication for winning all Monuments is outstanding.<br/>
 One last Monument win with Milan-Sanremo would make him join the elite club of Rik Van Looy, 
 Eddy Merckx and Roger de Vlaeminck.<br/>
 
-This is my first web app done with React/Node.js.
+This is my first web app done with **React/Node.js**.
 
 Try it [here](https://www.gilbertodyssey.com)
 
@@ -23,7 +23,7 @@ Try it [here](https://www.gilbertodyssey.com)
 
 After a couple of years busy working on low-level programming (5G base station antenna), I wanted to get back into 
 web development. I have always been interested by maps for data visualisation. In France, we've got a popular tv show 
-called "Le dessous des cartes" which explains geopolitics only by showing map visualisation. I guess I always wanted to 
+called **"Le dessous des cartes"** which explains geopolitics only by showing map visualisation. I guess I always wanted to 
 do something similar. Cycling being one of my favorite sports, I decided I could do a map visualisation in that domain.
 <br/><br/>
 
