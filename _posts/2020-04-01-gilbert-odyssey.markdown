@@ -42,7 +42,7 @@ There are 2 main views, the **Race** view and the **Cyclist** view. The **Race**
 ![cyclist-view](https://github.com/florianmainguy/florianmainguy.github.io/blob/master/assets/gilbert-odyssey/Cyclist-laptop.png?raw=true)
 The **Cyclist** view shows a picture of the cyclist, its Monument wins and a summary of its wins with icons you can click on, that bring different color for better visualisation. From then you can click on a race name or search for another cyclist through the search box.
 
-There is a **About** icon at the bottom that brings a pop-up for information about the app, and a link the /*github*/ repo.
+There is a **About** icon at the bottom that brings a pop-up for information about the app, and a link the [github](https://github.com/florianmainguy/gilbert-odyssey) repo.
 There is also a **FullScreen** icon, that allows to see the map in full screen and interract with it.
 
 ## Development Stack
@@ -55,7 +55,7 @@ This project was also a chance for me to learn new technologies. My main focus w
 
 ## Focus on React
 
-The main part of the work being done on this web app was on the front end, as there is no interaction with the database after startup.</br>
+The main part of the work being done on this web app was on the front end, as there is no interaction with the database after startup.<br/>
 I used React class components and discovered lifecycle methods. The map being the main component, I wanted it to always be full screen. I then added the user interface above it. So I have 2 components using full screen and that need to interract between themself.
 
 That design choice leaded me to 2 problems
@@ -74,10 +74,10 @@ I really enjoyed this project and specially React. I understand now why it becam
 
 **Race view**
 <div class="wraptocenter">
-<img src="https://github.com/florianmainguy/florianmainguy.github.io/blob/master/assets/gilbert-odyssey/Race-smartphone.png" style="min-width:0;max-width:100%;box-shadow:0">
+<img src="https://github.com/florianmainguy/florianmainguy.github.io/blob/master/assets/gilbert-odyssey/Race-smartphone.png?raw=true" style="min-width:0;max-width:100%;box-shadow:0">
 </div>
 
 **Cyclist view**
 <div class="wraptocenter">
-<img src="https://github.com/florianmainguy/florianmainguy.github.io/blob/master/assets/gilbert-odyssey/Cyclist-smartphone.png" style="min-width:0;max-width:100%;box-shadow:0">
+<img src="https://github.com/florianmainguy/florianmainguy.github.io/blob/master/assets/gilbert-odyssey/Cyclist-smartphone.png?raw=true" style="min-width:0;max-width:100%;box-shadow:0">
 </div>
