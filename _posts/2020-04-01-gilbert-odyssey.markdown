@@ -1,22 +1,22 @@
 ---
 layout: post
-title:  "Gilbert Odyssey - Interactive Visualisation of the 5 Monuments of Cycling"
+title:  "Gilbert Odyssey - The 5 Monuments of Cycling"
 date:   2020-04-07 20:30:00
 categories: jekyll update
 ---
 
-Gilbert Odyssey is an interactive visualisation of the 5 Monuments of cycling<br/><br/>
+Gilbert Odyssey is an interactive visualisation of the 5 Monuments of cycling<br/>
 
 Named after Philippe Gilbert, whose dedication for winning all Monuments is outstanding.<br/>
 One last Monument win with Milan-Sanremo would make him join the elite club of Rik Van Looy, 
-Eddy Merckx and Roger de Vlaeminck.<br/><br/>
+Eddy Merckx and Roger de Vlaeminck.<br/>
 
 This is my first web app done with React/Node.js.
 
 Try it [here](https://www.gilbertodyssey.com)
 
 <p align="center">
-<img src="gilbert-odyssey/gilbert-odyssey.gif">
+<img src="assets/gilbert-odyssey/gilbert-odyssey.gif">
 </p>
 
 ## Motivation
@@ -35,7 +35,11 @@ all popular classics and Grand Tours. Unfortunately I looked for free/open datab
 
 On the **Home** view, you can see the focus on the map. It shows the 5 Monument races, and asks the user to choose a race or search for a cyclist. You can also use the map and click on a race.
 
-There are 2 main views, the **Race** view and the **Cyclist** view. The **Race** view zooms on the race and the interface shows data about the overall best winners, the full history and the elevation profile. From then you can click towards another race with the arrows, or click on a cyclist name. The **Cyclist** view shows a picture of the cyclist, its Monument wins and a summary of its wins with icons you can click on, that bring different color for better visualisation. From then you can click on a race name or search for another cyclist through the search box.
+![race-view](assets/gilbert-odyssey/Race2-laptop.png)
+There are 2 main views, the **Race** view and the **Cyclist** view. The **Race** view zooms on the race and the interface shows data about the overall best winners, the full history and the elevation profile. From then you can click towards another race with the arrows, or click on a cyclist name.
+
+![cyclist-view](assets/gilbert-odyssey/Cyclist-laptop.png)
+The **Cyclist** view shows a picture of the cyclist, its Monument wins and a summary of its wins with icons you can click on, that bring different color for better visualisation. From then you can click on a race name or search for another cyclist through the search box.
 
 There is a **About** icon at the bottom that brings a pop-up for information about the app, and a link the /*github*/ repo.
 There is also a **FullScreen** icon, that allows to see the map in full screen and interract with it.
@@ -61,30 +65,18 @@ That design choice leaded me to 2 problems
 
 I really enjoyed this project and specially React. I understand now why it became so popular. I already have some plans for using it in another project. This time I would use **React hooks** as I understand its benefits and I wouldn't face some of the problems I met here. I also want to use **TypeScript**, open data and more stuff going on the back end/database.
 
-## Screenshots
+## Smartphone Screenshots
 **Home page**
-![home-page](gilbert-odyssey/Home-laptop.png)
-
+<div class="wraptocenter">
+<img src="assets/gilbert-odyssey/Home-smartphone.png" style="min-width:0;max-width:100%;box-shadow:0">
+</div>
 
 **Race view**
-![race-view](gilbert-odyssey/Race2-laptop.png)
-
+<div class="wraptocenter">
+<img src="assets/gilbert-odyssey/Race-smartphone.png" style="min-width:0;max-width:100%;box-shadow:0">
+</div>
 
 **Cyclist view**
-![cyclist-view](gilbert-odyssey/Cyclist-laptop.png)
-
-
-**Home page on smartphone**
 <div class="wraptocenter">
-<img src="gilbert-odyssey/Home-smartphone.png" style="min-width:0;max-width:100%;box-shadow:0">
-</div>
-
-**Race view on smartphone**
-<div class="wraptocenter">
-<img src="gilbert-odyssey/Race-smartphone.png" style="min-width:0;max-width:100%;box-shadow:0">
-</div>
-
-**Cyclist view on smartphone**
-<div class="wraptocenter">
-<img src="gilbert-odyssey/Cyclist-smartphone.png" style="min-width:0;max-width:100%;box-shadow:0">
+<img src="assets/gilbert-odyssey/Cyclist-smartphone.png" style="min-width:0;max-width:100%;box-shadow:0">
 </div>
