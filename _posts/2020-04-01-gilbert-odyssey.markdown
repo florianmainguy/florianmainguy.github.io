@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Gilbert Odyssey or The 5 Monuments of Cycling - React/Node.js"
+title:  "Gilbert Odyssey - Data visualisation with React/Node.js"
 date:   2020-04-07 20:30:00
 categories: jekyll update
 ---
