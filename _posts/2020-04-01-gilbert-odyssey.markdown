@@ -16,7 +16,7 @@ This is my first web app done with React/Node.js.
 Try it [here](https://www.gilbertodyssey.com)
 
 <p align="center">
-<img src="assets/gilbert-odyssey/gilbert-odyssey.gif">
+<img src="https://github.com/florianmainguy/florianmainguy.github.io/blob/master/assets/gilbert-odyssey/gilbert-odyssey.gif?raw=true">
 </p>
 
 ## Motivation
@@ -33,12 +33,13 @@ all popular classics and Grand Tours. Unfortunately I looked for free/open datab
 
 ## Features
 
+![home-view](https://github.com/florianmainguy/florianmainguy.github.io/blob/master/assets/gilbert-odyssey/Home-laptop.png?raw=true)
 On the **Home** view, you can see the focus on the map. It shows the 5 Monument races, and asks the user to choose a race or search for a cyclist. You can also use the map and click on a race.
 
-![race-view](assets/gilbert-odyssey/Race2-laptop.png)
+![race-view](https://github.com/florianmainguy/florianmainguy.github.io/blob/master/assets/gilbert-odyssey/Race2-laptop.png?raw=true)
 There are 2 main views, the **Race** view and the **Cyclist** view. The **Race** view zooms on the race and the interface shows data about the overall best winners, the full history and the elevation profile. From then you can click towards another race with the arrows, or click on a cyclist name.
 
-![cyclist-view](assets/gilbert-odyssey/Cyclist-laptop.png)
+![cyclist-view](https://github.com/florianmainguy/florianmainguy.github.io/blob/master/assets/gilbert-odyssey/Cyclist-laptop.png?raw=true)
 The **Cyclist** view shows a picture of the cyclist, its Monument wins and a summary of its wins with icons you can click on, that bring different color for better visualisation. From then you can click on a race name or search for another cyclist through the search box.
 
 There is a **About** icon at the bottom that brings a pop-up for information about the app, and a link the /*github*/ repo.
@@ -68,15 +69,15 @@ I really enjoyed this project and specially React. I understand now why it becam
 ## Smartphone Screenshots
 **Home page**
 <div class="wraptocenter">
-<img src="assets/gilbert-odyssey/Home-smartphone.png" style="min-width:0;max-width:100%;box-shadow:0">
+<img src="https://github.com/florianmainguy/florianmainguy.github.io/blob/master/assets/gilbert-odyssey/Home-smartphone.png?raw=true" style="min-width:0;max-width:100%;box-shadow:0">
 </div>
 
 **Race view**
 <div class="wraptocenter">
-<img src="assets/gilbert-odyssey/Race-smartphone.png" style="min-width:0;max-width:100%;box-shadow:0">
+<img src="https://github.com/florianmainguy/florianmainguy.github.io/blob/master/assets/gilbert-odyssey/Race-smartphone.png" style="min-width:0;max-width:100%;box-shadow:0">
 </div>
 
 **Cyclist view**
 <div class="wraptocenter">
-<img src="assets/gilbert-odyssey/Cyclist-smartphone.png" style="min-width:0;max-width:100%;box-shadow:0">
+<img src="https://github.com/florianmainguy/florianmainguy.github.io/blob/master/assets/gilbert-odyssey/Cyclist-smartphone.png" style="min-width:0;max-width:100%;box-shadow:0">
 </div>
