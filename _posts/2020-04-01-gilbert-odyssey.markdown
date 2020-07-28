@@ -13,7 +13,7 @@ Eddy Merckx and Roger de Vlaeminck.<br/>
 
 This is my first web app done with **React/Node.js**.
 
-Try it [here](https://www.gilbertodyssey.com)
+Try it [here](http://www.gilbertodyssey.com)
 
 <p align="center">
 <img src="https://github.com/florianmainguy/florianmainguy.github.io/blob/master/assets/gilbert-odyssey/gilbert-odyssey.gif?raw=true">
