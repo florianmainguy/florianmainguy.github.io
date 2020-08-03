@@ -133,7 +133,8 @@ code {
 
 /** Footer **/
 .site-footer {
-    height: 100px;
+    height: 30px;
+    text-align: center;
 }
 
 .wrapper {
@@ -150,4 +151,10 @@ code {
 
 .footer-heading a{
     color: white;
+}
+
+.footer-logo img{
+    max-width: 2rem;
+    min-width: 0;
+    padding: 5px;
 }

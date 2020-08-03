@@ -73,10 +73,10 @@ password: deltaforce
 
 **About page on smartphone**
 <div class="wraptocenter">
-<img src="https://github.com/florianmainguy/fakebook/blob/master/docs/about.png?raw=true" style="min-width:0;max-width:100%;box-shadow:0">
+<img src="https://github.com/florianmainguy/fakebook/blob/master/docs/about.png?raw=true" style="min-width:0;max-width:100%;box-shadow:0;margin-left:0%;">
 </div>
 
 **Search page on smartphone**
 <div class="wraptocenter">
-<img src="https://github.com/florianmainguy/fakebook/blob/master/docs/index.png?raw=true" style="min-width:0;max-width:100%;box-shadow:0">
+<img src="https://github.com/florianmainguy/fakebook/blob/master/docs/index.png?raw=true" style="min-width:0;max-width:100%;box-shadow:0;margin-left:0%;">
 </div>

@@ -69,15 +69,15 @@ I really enjoyed this project and specially React. I understand now why it becam
 ## Smartphone Screenshots
 **Home page**
 <div class="wraptocenter">
-<img src="https://github.com/florianmainguy/florianmainguy.github.io/blob/master/assets/gilbert-odyssey/Home-smartphone.png?raw=true" style="min-width:0;max-width:100%;box-shadow:0">
+<img src="https://github.com/florianmainguy/florianmainguy.github.io/blob/master/assets/gilbert-odyssey/Home-smartphone.png?raw=true" style="min-width:0;max-width:100%;box-shadow:0;margin-left:0%;">
 </div>
 
 **Race view**
 <div class="wraptocenter">
-<img src="https://github.com/florianmainguy/florianmainguy.github.io/blob/master/assets/gilbert-odyssey/Race-smartphone.png?raw=true" style="min-width:0;max-width:100%;box-shadow:0">
+<img src="https://github.com/florianmainguy/florianmainguy.github.io/blob/master/assets/gilbert-odyssey/Race-smartphone.png?raw=true" style="min-width:0;max-width:100%;box-shadow:0;margin-left:0%;">
 </div>
 
 **Cyclist view**
 <div class="wraptocenter">
-<img src="https://github.com/florianmainguy/florianmainguy.github.io/blob/master/assets/gilbert-odyssey/Cyclist-smartphone.png?raw=true" style="min-width:0;max-width:100%;box-shadow:0">
+<img src="https://github.com/florianmainguy/florianmainguy.github.io/blob/master/assets/gilbert-odyssey/Cyclist-smartphone.png?raw=true" style="min-width:0;max-width:100%;box-shadow:0;margin-left:0%;">
 </div>

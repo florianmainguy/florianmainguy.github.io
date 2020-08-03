@@ -1,9 +1,6 @@
 <footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading"><a href="/">FM</a></h2>
-
+  <div class="footer-logo">
+    {% if site.footer-links.github %}<a href="http://github.com/{{ site.footer-links.github }}"><img src="{{site.baseurl}}/assets/svg-icons/GitHub-Mark-Light-120px-plus.png" style="margin-left:0%;"></a>{% endif %}
+    {% if site.footer-links.twitter %}<a href="http://twitter.com/{{ site.footer-links.twitter }}"><img src="{{site.baseurl}}/assets/svg-icons/Twitter_Social_Icon_Circle_Color.png" style="margin-left:0%;"></a>{% endif %}
   </div>
-
 </footer>
